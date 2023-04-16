@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Us</title>
+    <link rel="shortcut icon" href="d20.png">
+    <link rel="stylesheet" href="stylesC.css">
+    <script>
+      function validate(){
+        var username = document.signup.uname.value;
+        var name = document.signup.name.value;
+        var dateofbirth = document.signup.dob.value;
+        var password = document.signup.pwd.value;
+        if(username==""||name==""||dateofbirth==""||password=="")
+        {
+          alert("Fill all the fields")
+        }
+        else{
+          alert("Form submitted successfully")
+        }
+      }
+    </script>
+  </head>
+  <body>
+
+    <header>
+      <div class="heading">
+        <h1> Play Dungeons and Dragons: Brownsville Texas!</h1>
+        <div class="banner">
+          <div class="navbar">
+            <div class = "content">
+              <form name="signup">
+        <div>
+          <h1>Sign up today!</h1>
+          <p> Sign up today and play soon with other players!.</p>
+          </div>
+                <fieldset>
+                  <legend>Sign Up</legend>
+                <table>
+                <tr>
+                  <td align="right"><label>Username:</label></td>
+                  <td><input type="text" name="uname"><br/></td>
+                </tr>
+                <tr>
+                  <td><label>Email:</label></td>
+                  <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                  <td><label>DOB:</label></td>
+                  <td><input type="date" name="dob"></td>
+                </tr>
+                <tr>
+                  <td align="right"><label>Password:</label></td>
+                  <td><input type="password" name="pwd"></td>
+                </tr>
+                <tr>
+                  <td colspan="2" align="center"><input type="button" value="Submit" onclick="validate();"></td>
+                </tr>
+                </table>
+              </fieldset>
+              </form>
+            <img src="d202.png" class="logo"
+      </div>
+      <ul class = "nav-bar">
+        <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="Contact us.html">Contact Us</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+              <li><a href="About Us.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+
+      </ul>
+    </header>
+
+    <footer>
+
+    </footer>
+  </body>
+</html>
